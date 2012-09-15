@@ -9,15 +9,17 @@ First, clone this repository (or one of its forks) to a new directory named afte
 
 <pre><code>git clone git@github.com:DavidEGrayson/kata-template-ruby-rspec-watchr.git kata_tennis</code></pre>
 
-You will need a few gems to use this template.  The easiest way to install them is to run @gem install bundler@ and then @bundle@; this will install all the gems listed in @Gemfile@.  What version of ruby you use, and whether or not to use "RVM":https://rvm.io/, are decisions that are up to you.
+You will need a few gems to use this template.  The easiest way to install them is to run @gem install bundler@ and then @bundle@; this will install all the gems listed in @Gemfile@.  What version of Ruby you use, and whether or not to use "RVM":https://rvm.io/, are decisions that are up to you.
 
 Next, open @spec.rb@, and @kata.rb@ in a text editor with Ruby syntax highlighting.  These two files are where you will write your specs and your code, respectively.
 
-You can run the specs at any time by running @rake@ at the command line, but you should really run @rake watch@: this will use watchr to automatically run the specs whenever any ruby files in the directory change.
+You can run the specs by running @rake@ at the command line, but you should really run @rake watch@: this will use watchr to automatically run the specs whenever any ruby files in the directory change.
 
-h2. Managing multiple attempts
+You can run @rake -T@ to see what rake tasks are available.
 
-If you will be presenting your kata to an audience, you should practice it multiple times.  I like to use "git":http://git-scm.com/ to manage the multiple attempts; that way you can easily keep the code from all of your attempts and compare them.
+h2. Managing multiple attempts with git
+
+If you will be presenting your kata to an audience, you should practice it multiple times.  I like to use "git":http://git-scm.com/ to manage the multiple attempts.  That way you can easily keep the code from all of your attempts and compare them.
 
 Before each attempt, you can run @git checkout -b try1 master@ to create a new branch named @try1@, based on the master branch.  When you have completed your attempt, run @git commit -am@ to commit your changes.
 
