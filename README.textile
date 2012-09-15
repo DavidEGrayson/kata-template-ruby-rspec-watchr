@@ -33,9 +33,15 @@ h2. Presentation tips
 ## Write a new spec -> test results turn red.
 ## Improve your code -> test results turn green.
 ## Refactor your code to make it better without breaking the specs.
-* Practice the keyboard shortcuts so that you can give most of the presentation without moving your hand to the mouse.
+* Practice keyboard shortcuts so that you can give most of the presentation without moving your hand to the mouse.
 * Favor typing code instead of pasting or uncommenting.
 * Figure out how much time is allotted to your presentation, and have a timer running while you practice.  It is good to leave time at the end for questions and feedback, and certain groups will expect that.
 * Hide the OS's bars at the top and bottom to make more vertical room for code.
 * Choose the window layout carefully.  I really like the layout shown in the picture above because it allows you to see the specs, the code, and the test results all at once.  Positive test results are easily identified without switching windows.  A quick _Alt+Tab_ lets you see the full output of the specs when there is an error.
 * Set up everything as much as possible before your presentation begins.
+
+h2. More Resources
+
+* Jason Arhart's "shuhari":https://github.com/jarhart/shuhari/tree/master/lib/shuhari gem.  Shuhari generates new projects for doing TDD kata with Ruby+RSpec+Guard.
+* "RSpec documentation":https://www.relishapp.com/rspec
+* "Ruby language documentation":http://ruby-doc.org/
