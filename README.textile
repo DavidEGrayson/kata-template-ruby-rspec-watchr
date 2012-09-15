@@ -22,7 +22,7 @@ h2. Managing multiple attempts with git
 
 If you will be presenting your kata to an audience, you should practice it multiple times.  I like to use "git":http://git-scm.com/ to manage the multiple attempts.  That way you can easily keep the code from all of your attempts and compare them.
 
-Before each attempt, you can run @git checkout -b try1 master@ to create a new branch named @try1@, based on the master branch.  When you have completed your attempt, run @git commit -am@ to commit your changes.
+Before each attempt, you can run @git checkout -b tryN master@ to create a new branch named @tryN@, where @N@ is the number of this attempt.  When you have completed your attempt, run @git commit -am@ to commit your changes.
 
 To see the differences between your current set of files and a previous attempt, run a command like @git diff try1@.  To see the differences between two attempts, run a command like @git diff try1 try2@.
 
