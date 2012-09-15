@@ -1,0 +1,24 @@
+h1. Kata Template for "Ruby":http://www.ruby-lang.org/en/ + "RSpec":http://rspec.info/ + "watchr":https://github.com/mynyml/watchr
+
+This is a set of files that makes it easy to get started doing a "test-driven development":http://en.wikipedia.org/wiki/Test-driven_development "coding kata":http://codekata.pragprog.com/ in the "Ruby":http://www.ruby-lang.org/en/ language, using "RSpec":http://rspec.info/ as the testing framework, and using "watchr":https://github.com/mynyml/watchr to automatically run the tests whenever you change your code.
+
+
+h2. Getting Started
+
+First, clone this repository (or one of its forks) to a new directory named after the kata you want to do.  For example, if you were doing a kata about tennis, you could run:
+
+bc.. git clone git@github.com:DavidEGrayson/kata-template-ruby-rspec-watchr.git kata_tennis
+
+You will need a few gems to use this template.  The easiest way to install them is to run @gem install bundler@ and then @bundle@; this will install all the gems listed in @Gemfile@.  What version of ruby you use, and whether or not to use "RVM":https://rvm.io/, are decisions that are up to you.
+
+Next, open @spec.rb@, and @kata.rb@ in a text editor with Ruby syntax highlighting.  These two files are where you will write your specs and your code, respectively.
+
+You can run the specs at any time by running @rake@ at the command line, but you should really run @rake watch@: this will use watchr to automatically run the specs whenever any ruby files in the directory change.
+
+h2. Managing multiple attempts
+
+If you will be presenting your kata to an audience, you should practice it multiple times.  I like to use "git":http://git-scm.com/ to manage the multiple attempts; that way you can easily keep the code from all of your attempts and compare them.
+
+Before each attempt, you can run @git checkout -b try1 master@ to create a new branch named @try1@, based on the master branch.  When you have completed your attempt, run @git commit -am@ to commit your changes.
+
+To see the differences between your current set of files and a previous attempt, run a command like @git diff try1@.  To see the differences between two attempts, run a command like @git diff try1 try2@.
