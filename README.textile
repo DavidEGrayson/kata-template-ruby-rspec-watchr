@@ -10,9 +10,9 @@ First, clone this repository (or one of its forks) to a new directory named afte
 
 <pre><code>git clone git@github.com:DavidEGrayson/kata-template-ruby-rspec-watchr.git kata_tennis</code></pre>
 
-You will need a few gems to use this template.  The easiest way to install them is to run @gem install bundler@ and then @bundle@; this will install all the gems listed in @Gemfile@.  What version of Ruby you use, and whether or not to use "RVM":https://rvm.io/, are decisions that are up to you.
+You will need a few gems to use this template.  The easiest way to install them is to go into the new directory, run @gem install bundler@, and then run @bundle@; this will install all the gems listed in @Gemfile@.  What version of Ruby you use, and whether or not to use "RVM":https://rvm.io/, are decisions that are up to you.
 
-Next, open @spec.rb@, and @kata.rb@ in a text editor with Ruby syntax highlighting.  These two files are where you will write your specs and your code, respectively.
+Next, open @spec.rb@, and @kata.rb@ in a text editor.  These two files are where you will write your specs and your code, respectively.
 
 You can run the specs by running @rake@ at the command line, but you should really run @rake watch@: this will use watchr to automatically run the specs whenever any ruby files in the directory change.
 
@@ -26,19 +26,24 @@ Before each attempt, you can run @git checkout -b tryN master@ to create a new b
 
 To see the differences between your current set of files and a previous attempt, run a command like @git diff try1@.  To see the differences between two attempts, run a command like @git diff try1 try2@.
 
-h2. Presentation tips
+h2. Test-driven development tips
 
-* *Practice your entire presenation several times beforehand, speaking out loud to yourself.*  This is the most important tip.
-* Follow the "Red-Green-Refactor" pattern:
+* Repeat the "Red-Green-Refactor" pattern:
 ## Write a new spec -> test results turn red.
 ## Improve your code -> test results turn green.
 ## Refactor your code to make it better without breaking the specs.
+* Only write enough code to make your tests pass.
+
+h2. Presentation tips
+
+* *Practice your entire presenation several times beforehand, speaking out loud to yourself.*  This is the most important tip.
 * Practice keyboard shortcuts so that you can give most of the presentation without moving your hand to the mouse.
 * Favor typing code instead of pasting or uncommenting.
 * Figure out how much time is allotted to your presentation, and have a timer running while you practice.  It is good to leave time at the end for questions and feedback, and certain groups will expect that.
 * Hide the OS's bars at the top and bottom to make more vertical room for code.
 * Choose the window layout carefully.  I really like the layout shown in the picture above because it allows you to see the specs, the code, and the test results all at once.  Positive test results are easily identified without switching windows.  A quick _Alt+Tab_ lets you see the full output of the specs when there is an error.
 * Set up everything as much as possible before your presentation begins.
+* Use a text editor that supports Ruby syntax highlighting.
 
 h2. More Resources
 
