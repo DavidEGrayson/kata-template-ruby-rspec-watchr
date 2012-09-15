@@ -2,6 +2,7 @@ h1. Kata Template for "Ruby":http://www.ruby-lang.org/en/ + "RSpec":http://rspec
 
 This is a set of files that makes it easy to get started doing a "test-driven development":http://en.wikipedia.org/wiki/Test-driven_development "coding kata":http://codekata.pragprog.com/ in the "Ruby":http://www.ruby-lang.org/en/ language, using "RSpec":http://rspec.info/ as the testing framework, and using "watchr":https://github.com/mynyml/watchr to automatically run the tests whenever you change your code.
 
+!http://www.davidegrayson.com/keep/kata-layout-thumb.png!:http://www.davidegrayson.com/keep/kata-layout.png
 
 h2. Getting Started
 
@@ -24,3 +25,17 @@ If you will be presenting your kata to an audience, you should practice it multi
 Before each attempt, you can run @git checkout -b try1 master@ to create a new branch named @try1@, based on the master branch.  When you have completed your attempt, run @git commit -am@ to commit your changes.
 
 To see the differences between your current set of files and a previous attempt, run a command like @git diff try1@.  To see the differences between two attempts, run a command like @git diff try1 try2@.
+
+h2. Presentation tips
+
+* *Practice your entire presenation several times beforehand, speaking out loud to yourself.*  This is the most important tip.
+* Follow the "Red-Green-Refactor" pattern:
+## Write a new spec -> test results turn red.
+## Improve your code -> test results turn green.
+## Refactor your code to make it better without breaking the specs.
+* Practice the keyboard shortcuts so that you can give most of the presentation without moving your hand to the mouse.
+* Favor typing code instead of pasting or uncommenting.
+* Figure out how much time is allotted to your presentation, and have a timer running while you practice.  It is good to leave time at the end for questions and feedback, and certain groups will expect that.
+* Hide the OS's bars at the top and bottom to make more vertical room for code.
+* Choose the window layout carefully.  I really like the layout shown in the picture above because it allows you to see the specs, the code, and the test results all at once.  Positive test results are easily identified without switching windows.  A quick _Alt+Tab_ lets you see the full output of the specs when there is an error.
+* Set up everything as much as possible before your presentation begins.
