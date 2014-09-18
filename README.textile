@@ -8,7 +8,7 @@ h2. Getting Started
 
 First, clone this repository (or one of its forks) to a new directory named after the kata you want to do.  For example, if you were doing a kata about tennis, you could run:
 
-<pre><code>git clone git@github.com:DavidEGrayson/kata-template-ruby-rspec-watchr.git kata_tennis</code></pre>
+<pre><code>git clone git://github.com/DavidEGrayson/kata-template-ruby-rspec-watchr.git kata_tennis</code></pre>
 
 You will need a few gems to use this template.  The easiest way to install them is to go into the new directory, run @gem install bundler@, and then run @bundle@; this will install all the gems listed in @Gemfile@.  What version of Ruby you use, and whether or not to use "RVM":https://rvm.io/, are decisions that are up to you.
 
